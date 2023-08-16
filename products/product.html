@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <link rel="stylesheet" href="./product.css">
+</head>
+<body>
+    <div>
+        <!-- <div id=" navigation"></div> -->
+    </div>
+    <div id="title" class="content">
+        <h1>Our Products</h1>
+    </div>
+    <div id="operations" class="content">
+        <select id="showfilters" onchange=filterproducts()>
+            <option value="">Show Filters</option>
+            <option value="">View All</option>
+            <option value="Smart Watch">Watch</option>
+            <option value="Wireless-Earbuds">Wireless-Earbuds</option>
+            <option value="NeckBands">NeckBands</option>
+            <option value="Wireless-HeadPhones">Wireless-HeadPhones</option>
+            <option value="Wireless-Speakers">Wireless-Speakers</option>
+            
+        </select>
+        <select id="showsort" onchange="sortproducts()">
+            <option value="">Sort by</option>
+            <option value="Ascending">Alphabetically A-Z</option>
+            <option value="Decending">Alphabetically Z-A</option>
+            <option value="hightolow">Price, High to Low</option>
+            <option value="lowtohigh">Price, Low to High</option>
+        </select>
+    </div>
+    <div id="parent">
+       
+    </div>
+    <div>
+        <button id="backbtn"><a href="../index.html" id="backanch">BACK</a></button>
+    </div>
+</body>
+</html>
+<script  src="./product.js"></script>
