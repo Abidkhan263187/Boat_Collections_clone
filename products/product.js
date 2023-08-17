@@ -374,6 +374,7 @@ var productlistval = [{
     Status:"Out-Stock",
 },
 ]
+let cartArray=JSON.parse(localStorage.getItem('cart_list'))
 
 // let nav = document.getElementById('navigation');
 // nav.innerHTML = navbar();
@@ -462,7 +463,7 @@ function displayproducts(list){
         div4.append(p1);
 
         var p2 = document.createElement("p");
-        p2.textContent = elem.Discount;
+        p2.textContent = "Offer Extra 10% discount";
 
         var btn;
         
@@ -492,6 +493,12 @@ function displayproducts(list){
         document.querySelector("#parent").append(div);
 
     })
+}
+
+function addtocart(obj){
+    cartArray.push(obj);
+    localStorage.setItem('cart_list', JSON.stringify(cartArray));
+
 }
 
 //Filter Function

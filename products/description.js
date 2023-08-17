@@ -1,6 +1,6 @@
 
 let obj = JSON.parse(localStorage.getItem("details"));
-
+let cartArray=JSON.parse(localStorage.getItem('cart_list'))
 
 showdetails(obj);
 
@@ -106,6 +106,9 @@ function showdetails(obj) {
     let desc_button = document.createElement("button");
     desc_button.className = "desc-button"; 
     desc_button.textContent = "Add To Cart";
+    desc_button.addEventListener('click',()=>{
+        addtocart(obj)
+    })
     
     detail_right.append(rat_review, itemName, desc, price_desc, desc_discount, col_div, pay_div,userText, user_love, checkText,check_delivery, desc_button);
     
@@ -135,6 +138,11 @@ function feature_image(img){
 }
 
 
+function addtocart(obj){
+    cartArray.push(obj);
+    localStorage.setItem('cart_list', JSON.stringify(cartArray));
+
+}
 
 // navbar functionality
 
