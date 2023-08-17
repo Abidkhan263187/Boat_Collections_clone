@@ -414,7 +414,7 @@ var productlistval = [{
 // footer.innerHTML=Footer()
 
 var selectedcategory2 = localStorage.getItem("selected_category");
-console.log(selectedcategory2);
+// console.log(selectedcategory2);
 if(selectedcategory2 === "Smart Watch"){
     homepagecategory(selectedcategory2);
 }
@@ -422,7 +422,7 @@ else if(selectedcategory2 === "Wireless-Earbuds"){
     homepagecategory(selectedcategory2);
 }
 else if(selectedcategory2 === "NeckBands"){
-    console.log(selectedcategory2)
+    // console.log(selectedcategory2)
     homepagecategory(selectedcategory2);
 }
 else if(selectedcategory2 === "Wireless-HeadPhones"){
@@ -547,7 +547,7 @@ function filterproducts(){
     })
     displayproducts(filtered);
 }
-// //Sort
+//Sort
 function sortproducts(){
     var selectedsort = document.getElementById("showsort").value;
     if(selectedsort === "Ascending"){
@@ -598,7 +598,7 @@ function sortproducts(){
 }
 
 function homepagecategory(str){
-    console.log(str)
+    // console.log(str)
     var filtered2 = productlistval.filter(function(elem){
         return elem.Category === str;
     })

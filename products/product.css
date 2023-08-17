@@ -162,6 +162,24 @@ button:hover{
     margin-top: 0px;
     margin-bottom: 10px;
 }
+#backbtn{
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    background-color: #ff0000;
+}
+#backbtn>a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+#btn_div{
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+}
 .nmdiv{
     width: 90%;
     height: 40px;
