@@ -5,9 +5,8 @@ var productlistval = [{
     Name:"Wave Select Smartwatch",
     Price:2099,
     MRP:6900,
-    Percent_off:"80% off",
+    Discount:"80% off",
     Rating:4.6,
-    Discount:"15 Extra Discount on UPI",
     Discription:" 1.69(4.29 cm) Colour HD Display, 20+ Active Sport Modes, Heart Rate & SpO2 Monitor, 10 Day Battery Life",
     Category:"Smart Watch",
     Status:"In-Stock",
@@ -17,9 +16,8 @@ var productlistval = [{
     Name:"Wave Lite",
     Price:1499,
     MRP:6900,
-    Percent_off:"79% off",
+    Discount:"79% off",
     Rating:4.6,
-    Discount:"15 Extra Discount on UPI",
     Discription:" 1.69(4.29 cm) Colour HD Display, 20+ Active Sport Modes, Heart Rate & SpO2 Monitor, 10 Day Battery Life",
     Category:"Smart Watch",
     Status:"Out-Stock",
@@ -29,9 +27,8 @@ var productlistval = [{
     Name:"Wave Call",
     Price:1499,
     MRP:7990,
-    Percent_off:"80% off",
+    Discount:"80% off",
     Rating:4.9,
-    Discount:"15 Extra Discount on UPI",
     Discription:"Bluetooth Calling Smartwatch with 1.69 (4.29 cm) HD Curved Display, 150+ Watch Faces, Heart Rate & SPO2 Monitoring",
     Category:"Smart Watch",
     Status:"In-Stock",
@@ -42,9 +39,8 @@ var productlistval = [{
     Name:"Airdopes 131",
     Price:999,
     MRP:2990,
-    Percent_off:"67% off",
+    Discount:"67% off",
     Rating:4.8,
-    Discount:"15 Extra Discount on UPI",
     Discription:"Wireless Earbuds with upto 60 Hours Playback, 13mm Drivers and IWP Technology, 650mah C type Charging Case",
     Category:"Wireless-Earbuds",
     Status:"In-Stock",
@@ -54,9 +50,8 @@ var productlistval = [{
     Name:"Airdopes 141",
     Price:1299,
     MRP:4490,
-    Percent_off:"79% off",
+    Discount:"79% off",
     Rating:4.8,
-    Discount:"15 Extra Discount on UPI",
     Discription:"Equipped with 8mm drivers, Upto 42 Hours Total Playback, ENx™ Technology, ASAPTM Charge",
     Category:"Wireless-Earbuds",
     Status:"In-Stock",
@@ -66,9 +61,8 @@ var productlistval = [{
     Name:"Airdopes 163",
     Price:1399,
     MRP:2490,
-    Percent_off:"44% off",
+    Discount:"44% off",
     Rating:4.8,
-    Discount:"15 Extra Discount on UPI",
     Discription:"Wireless Earbuds with Massive Playback of upto 17 Hour, IPX5 Water & Sweat Resistance, IWP Technology, Type C Interface",
     Category:"Wireless-Earbuds",
     Status:"In-Stock",
@@ -79,9 +73,8 @@ var productlistval = [{
     Name:"TRebel Rockerz 235 V2",
     Price:1199,
     MRP:2990,
-    Percent_off:"60% off",
+    Discount:"60% off",
     Rating:4.8,
-    Discount:"15 Extra Discount on UPI",
     Discription:"Wireless Earphone with 10mm Drivers, 8 Hours Non-Stop Music, Single Command Assist, Fast Charging",
     Category:"NeckBands",
     Status:"In-Stock",
@@ -91,9 +84,8 @@ var productlistval = [{
     Name:"Rockerz 103 Pro",
     Price:899,
     MRP:2490,
-    Percent_off:"64% off",
+    Discount:"64% off",
     Rating:4.9,
-    Discount:"15 Extra Discount on UPI",
     Discription:"Wireless Earphones with 10 mm Drivers, Single Press Voice Assistant, Up To 20 hrs Uninterrupted, ENx™ Technology",
     Category:"NeckBands",
     Status:"In-Stock",
@@ -103,9 +95,8 @@ var productlistval = [{
     Name:"Rockerz 255 Pro+",
     Price:1299,
     MRP:3990,
-    Percent_off:"67% off",
+    Discount:"67% off",
     Rating:4.8,
-    Discount:"15 Extra Discount on UPI",
     Discription:"Bluetooth Earphone with 10mm drivers, Up to 40H Nonstop Playback, Type-C charging, ASAP Charge",
     Category:"NeckBands",
     Status:"In-Stock",
@@ -116,9 +107,8 @@ var productlistval = [{
     Name:"Rockerz 518",
     Price:1299,
     MRP:3990,
-    Percent_off:"67% off",
+    Discount:"67% off",
     Rating:4.9,
-    Discount:"15 Extra Discount on UPI",
     Discription:"Wireless Headphone with Dynamic 50mm Driver, Up To 20 Hours Of Playtime, Easy Control and Lightweight",
     Category:"Wireless-HeadPhones",
     Status:"In-Stock",
@@ -128,9 +118,8 @@ var productlistval = [{
     Name:"Rockerz 558",
     Price:1999,
     MRP:2999,
-    Percent_off:"60% off",
+    Discount:"60% off",
     Rating:5.0,
-    Discount:"15 Extra Discount on UPI",
     Discription:"boAt Rockerz 558",
     Category:"Wireless-HeadPhones",
     Status:"In-Stock",
@@ -140,9 +129,8 @@ var productlistval = [{
     Name:"Rockerz 400",
     Price:1499,
     MRP:2990,
-    Percent_off:"50% off",
+    Discount:"50% off",
     Rating:4.8,
-    Discount:"15 Extra Discount on UPI",
     Discription:"Wireless Bluetooth Headphone with 40mm Dyanmic Drivers, 8 Hours Non-Stop Playback, Lightweight & Portable",
     Category:"Wireless-HeadPhones",
     Status:"In-Stock",
@@ -153,9 +141,8 @@ var productlistval = [{
     Name:"Stone 250",
     Price:1499,
     MRP:3990,
-    Percent_off:"62% off",
+    Discount:"62% off",
     Rating:4.8,
-    Discount:"15 Extra Discount on UPI",
     Discription:"5W Portable Wireless Speaker with RGB LED, 9 Hours of Playtime, IPX7 Water Resistant",
     Category:"Wireless-Speakers",
     Status:"In-Stock",
@@ -165,9 +152,8 @@ var productlistval = [{
     Name:"Stone 1000v2",
     Price:3499,
     MRP:6990,
-    Percent_off:"50% off",
+    Discount:"50% off",
     Rating:5.0,
-    Discount:"15 Extra Discount on UPI",
     Discription:"14W Powerful Stereo Sound, Up to 8hrs Nonstop Playback, Travel & Party Booster, 3000mah Battery",
     Category:"Wireless-Speakers",
     Status:"In-Stock",
@@ -177,9 +163,8 @@ var productlistval = [{
     Name:"Stone 350",
     Price:1699,
     MRP:3490,
-    Percent_off:"51% off",
+    Discount:"51% off",
     Rating:4.8,
-    Discount:"15 Extra Discount on UPI",
     Discription:"Wireless Speaker with 10W Stereo Sound, 12H Nonstop Playtime, Lightweight Design, BT, TF Card & AUX Compatible",
     Category:"Wireless-Speakers",
     Status:"In-Stock",
@@ -190,9 +175,8 @@ var productlistval = [{
     Name:"TRebel Wave Call",
     Price:1799,
     MRP:7990,
-    Percent_off:"77% off",
+    Discount:"77% off",
     Rating:4.6,
-    Discount:"15 Extra Discount on UPI",
     Discription:"TRebel Wave Call",
     Category:"Smart Watch",
     Status:"In-Stock",
@@ -202,9 +186,8 @@ var productlistval = [{
     Name:"Matrix",
     Price:1799,
     MRP:11990,
-    Percent_off:"85% off",
+    Discount:"85% off",
     Rating:4.6,
-    Discount:"15 Extra Discount on UPI",
     Discription:"1.65 (4.18 cm) colour AMOLED Display, Fitness Tracking, 100+ Cloud Watch Faces",
     Category:"Smart Watch",
     Status:"In-Stock",
@@ -214,9 +197,8 @@ var productlistval = [{
     Name:"Wave Beat Call",
     Price:1799,
     MRP:7990,
-    Percent_off:"79% off",
+    Discount:"79% off",
     Rating:4.9,
-    Discount:"15 Extra Discount on UPI",
     Discription:"Bluetooth Calling Smart Watch with 1.69 (4.29 cm) HD Display, 600+ Cloud Watch faces, Live",
     Category:"Smart Watch",
     Status:"Out-Stock",
@@ -227,9 +209,8 @@ var productlistval = [{
     Name:"Airdopes 183 ",
     Price:1599,
     MRP:2990,
-    Percent_off:"47% off",
+    Discount:"47% off",
     Rating:4.8,
-    Discount:"15 Extra Discount on UPI",
     Discription:"Wireless Bluetooth Earbuds with 10mm Driver, Upto 90 min Playback in 10 min Charge, ASAP Charge Technology, BEAST™ mode",
     Category:"Wireless-Earbuds",
     Status:"Out-Stock",
@@ -239,9 +220,8 @@ var productlistval = [{
     Name:"Airdopes 121 v2",
     Price:1199,
     MRP:2999,
-    Percent_off:"60% off",
+    Discount:"60% off",
     Rating:4.8,
-    Discount:"15 Extra Discount on UPI",
     Discription:"In-Ear Earbuds v2 with 8mm driver, LED Case Battery Indicator, 380mAh Pocket Friendly Charging",
     Category:"Wireless-Earbuds",
     Status:"In-Stock",
@@ -251,9 +231,8 @@ var productlistval = [{
     Name:"Airdopes 411 ANC",
     Price:1999,
     MRP:4990,
-    Percent_off:"60% off",
+    Discount:"60% off",
     Rating:4.8,
-    Discount:"15 Extra Discount on UPI",
     Discription:"Noise-Cancelling Earbuds with 10mm Drivers, ASAPTM Charge Technology, Up to 25dB ANC, ENx™ Technology, 17.5 Hours Playback",
     Category:"Wireless-Earbuds",
     Status:"In-Stock",
@@ -264,9 +243,8 @@ var productlistval = [{
     Name:"Rockerz 260",
     Price:1299,
     MRP:2499,
-    Percent_off:"48% off",
+    Discount:"48% off",
     Rating:4.9,
-    Discount:"15 Extra Discount on UPI",
     Discription:"Wireless Bluetooth Earphone with Insta Wake & Pair, Quad Mics with ENx Technology & Asap Charge",
     Category:"NeckBands",
     Status:"In-Stock",
@@ -276,9 +254,8 @@ var productlistval = [{
     Name:"Rockerz 103 Pro",
     Price:899,
     MRP:2490,
-    Percent_off:"64% off",
+    Discount:"64% off",
     Rating:4.9,
-    Discount:"15 Extra Discount on UPI",
     Discription:"Wireless Earphones with 10 mm Drivers, Single Press Voice Assistant, Up To 20 hrs Uninterrupted, ENx™ Technology",
     Category:"NeckBands",
     Status:"In-Stock",
@@ -288,9 +265,8 @@ var productlistval = [{
     Name:"Rockerz 255R",
     Price:1299,
     MRP:2990,
-    Percent_off:"57% off",
+    Discount:"57% off",
     Rating:4.8,
-    Discount:"15 Extra Discount on UPI",
     Discription:"boAt Rockerz 255R",
     Category:"NeckBands",
     Status:"Out-Stock",
@@ -301,9 +277,8 @@ var productlistval = [{
     Name:"Rockerz 370",
     Price:749,
     MRP:2499,
-    Percent_off:"70% off",
+    Discount:"70% off",
     Rating:4.8,
-    Discount:"15 Extra Discount on UPI",
     Discription:"Wireless Headphone with 40mm Dynamic Driver,Bluetooth & AUX Connectivity, Upto 8 hrs Music",
     Category:"Wireless-HeadPhones",
     Status:"Out-Stock",
@@ -313,9 +288,8 @@ var productlistval = [{
     Name:"TRebel Rockerz 450",
     Price:1499,
     MRP:3990,
-    Percent_off:"62% off",
+    Discount:"62% off",
     Rating:5.0,
-    Discount:"15 Extra Discount on UPI",
     Discription:"Bluetooth Headphone with 40mm Driver, 08 Hours Non-Stop Playback, Bluetooth V5.0",
     Category:"Wireless-HeadPhones",
     Status:"In-Stock",
@@ -325,9 +299,8 @@ var productlistval = [{
     Name:"Rockerz 410",
     Price:999,
     MRP:2990,
-    Percent_off:"67% off",
+    Discount:"67% off",
     Rating:5.0,
-    Discount:"15 Extra Discount on UPI",
     Discription:"boAt Rockerz 410",
     Category:"Wireless-HeadPhones",
     Status:"In-Stock",
@@ -338,9 +311,8 @@ var productlistval = [{
     Name:"Stone 135",
     Price:899,
     MRP:1990,
-    Percent_off:"55% off",
+    Discount:"55% off",
     Rating:4.8,
-    Discount:"15 Extra Discount on UPI",
     Discription:"Portable Bluetooth Speaker with up to 11 HRS Playback & 5W RMS Immersive Sound, IPX 4 Water Resistant",
     Category:"Wireless-Speakers",
     Status:"Out-Stock",
@@ -350,9 +322,8 @@ var productlistval = [{
     Name:"Stone 500",
     Price:1999,
     MRP:299,
-    Percent_off:"33% off",
+    Discount:"33% off",
     Rating:5.0,
-    Discount:"15 Extra Discount on UPI",
     Discription:"Portable Bluetooth Speaker with 10W RMS Stereo Sound, RGB Lights, Bluetooth v5.0, AUX, USB & FM mode",
     Category:"Wireless-Speakers",
     Status:"In-Stock",
@@ -362,9 +333,8 @@ var productlistval = [{
     Name:"Stone 1010",
     Price:3199,
     MRP:6990,
-    Percent_off:"54% off",
+    Discount:"54% off",
     Rating:5.0,
-    Discount:"15 Extra Discount on UPI",
     Discription:"Party Speaker with 14W Output, 10 Hours of Playtime, IPX5 Water Resistant, 3000mah Battery",
     Category:"Wireless-Speakers",
     Status:"In-Stock",
@@ -375,9 +345,8 @@ var productlistval = [{
     Name:"TRebel Wave Call",
     Price:1799,
     MRP:7990,
-    Percent_off:"77% off",
+    Discount:"77% off",
     Rating:4.6,
-    Discount:"15 Extra Discount on UPI",
     Discription:"TRebel Wave Call",
     Category:"Smart Watch",
     Status:"In-Stock",
@@ -387,9 +356,8 @@ var productlistval = [{
     Name:"Matrix",
     Price:1799,
     MRP:11990,
-    Percent_off:"85% off",
+    Discount:"85% off",
     Rating:4.6,
-    Discount:"15 Extra Discount on UPI",
     Discription:"1.65 (4.18 cm) colour AMOLED Display, Fitness Tracking, 100+ Cloud Watch Faces",
     Category:"Smart Watch",
     Status:"In-Stock",
@@ -399,9 +367,8 @@ var productlistval = [{
     Name:"Wave Beat Call",
     Price:1799,
     MRP:7990,
-    Percent_off:"79% off",
+    Discount:"79% off",
     Rating:4.9,
-    Discount:"15 Extra Discount on UPI",
     Discription:"Bluetooth Calling Smart Watch with 1.69 (4.29 cm) HD Display, 600+ Cloud Watch faces, Live",
     Category:"Smart Watch",
     Status:"Out-Stock",
@@ -446,11 +413,17 @@ function displayproducts(list){
         var div1=document.createElement("div");
         div1.setAttribute("class","image");
 
+        let image_anchor=document.createElement("a");
+        image_anchor.setAttribute('href','./description.html')
         var image = document.createElement("img");
         image.setAttribute("src",elem.Image);
         image.setAttribute("alt",elem.Name);
+        image.addEventListener('click',()=>{
+            localStorage.setItem('details',JSON.stringify(elem))
+        })
+        image_anchor.append(image)
 
-        div1.append(image);
+        div1.append(image_anchor);
 
         var div2 = document.createElement("div");
         div2.setAttribute("class","details");
@@ -472,7 +445,7 @@ function displayproducts(list){
 
         var h43 = document.createElement("h4");
         h43.setAttribute("class","percentoff");
-        h43.textContent = elem.Percent_off;
+        h43.textContent = elem.Discount;
 
         var h44 = document.createElement("h4");
         h44.textContent = "₹"+elem.MRP;
@@ -606,3 +579,30 @@ function homepagecategory(str){
     h1.textContent = selectedcategory2;
     displayproducts(filtered2);
 }
+
+// navbar functionality
+
+function goToWL(){
+    var selectedcategory = "Wireless-Earbuds";
+       localStorage.setItem("selected_category","Wireless-Earbuds");
+   }
+    function goToWH(){
+       var selectedcategory = "Wireless-HeadPhones";
+       localStorage.setItem("selected_category","Wireless-HeadPhones");
+   }
+    function goToW(){
+       var selectedcategory = "Smart Watch";
+       localStorage.setItem("selected_category","Smart Watch");
+   }
+    function goToBW(){
+       var selectedcategory = "NeckBands";
+       localStorage.setItem("selected_category","NeckBands");
+   }
+    function goToSS(){
+       var selectedcategory = "Wireless-Speakers";
+       localStorage.setItem("selected_category","Wireless-Speakers");
+   }
+    function goToLE(){
+       var selectedcategory = "Wireless-HeadPhones";
+       localStorage.setItem("selected_category","Wireless-HeadPhones");
+   }

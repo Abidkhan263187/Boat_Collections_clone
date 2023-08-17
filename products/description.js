@@ -13,7 +13,7 @@ function showdetails(obj) {
     let path=document.createElement('p');
     path.textContent="Home >  Wireless  >  EarbudsLarge"
     let image = document.createElement("img");
-    image.src = obj.image;
+    image.src = obj.Image;
     detail_left.append(path,image);
     
     let detail_right = document.createElement('div');
@@ -21,27 +21,27 @@ function showdetails(obj) {
     detail_right.className = "detail-right"; 
     let rat_review = document.createElement('p');
     rat_review.className = "rat-review"; 
-    rat_review.textContent = "⭐"+ obj.rating + "  |  " + "1270 reviews ✔️";
+    rat_review.textContent = "⭐"+ obj.Rating + "  |  " + "1270 reviews ✔️";
     
     let itemName = document.createElement('h2');
     itemName.className = "item-name"; 
-    itemName.textContent = obj.name;
+    itemName.textContent = obj.Name;
     
     let desc = document.createElement('p');
     desc.className = "description"; 
-    desc.textContent = "hi this is about device and it's just a random description";
+    desc.textContent = obj.Discription;
     
     let price_desc = document.createElement('div');
     price_desc.className = "price-description"; 
     let desc_price = document.createElement('strong');
-    desc_price.textContent = "₹"+obj.price;
+    desc_price.textContent = "₹"+obj.Price;
     let desc_mrp = document.createElement('s');
-    desc_mrp.textContent = "₹"+obj.mrp;
+    desc_mrp.textContent = "₹"+obj.MRP;
     price_desc.append(desc_price, desc_mrp);
     
     let desc_discount = document.createElement('p');
     desc_discount.className = "discount"; 
-    desc_discount.textContent = obj.discount+"% off";
+    desc_discount.textContent = obj.Discount;
     
     let col_div = document.createElement('div');
     col_div.className = "col-div"; 
@@ -123,7 +123,7 @@ function name_item(cat,name){
 
 }
 console.log(obj)
-feature_image(obj.image)
+feature_image(obj.Image)
 function feature_image(img){
     console.log(img)
    let image= document.getElementById("feature_img")
@@ -133,3 +133,32 @@ function feature_image(img){
    image.src=img
    image2.src=img
 }
+
+
+
+// navbar functionality
+
+function goToWL(){
+    var selectedcategory = "Wireless-Earbuds";
+       localStorage.setItem("selected_category","Wireless-Earbuds");
+   }
+    function goToWH(){
+       var selectedcategory = "Wireless-HeadPhones";
+       localStorage.setItem("selected_category","Wireless-HeadPhones");
+   }
+    function goToW(){
+       var selectedcategory = "Smart Watch";
+       localStorage.setItem("selected_category","Smart Watch");
+   }
+    function goToBW(){
+       var selectedcategory = "NeckBands";
+       localStorage.setItem("selected_category","NeckBands");
+   }
+    function goToSS(){
+       var selectedcategory = "Wireless-Speakers";
+       localStorage.setItem("selected_category","Wireless-Speakers");
+   }
+    function goToLE(){
+       var selectedcategory = "Wireless-HeadPhones";
+       localStorage.setItem("selected_category","Wireless-HeadPhones");
+   }
