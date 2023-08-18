@@ -375,6 +375,197 @@ hr{
     margin-top: 10px;
 }
 
+/* cart start  */
+
+.sidebar {
+  position: fixed;
+  /* You can use 'absolute' if you prefer */
+  top: 0%;
+  /* Adjust this value to position vertically */
+  right: 0;
+  /* Position at the right edge of the viewport */
+  transform: translateX(110%);
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  width: 400px;
+  border: 1px solid gray;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s;
+  height: 100vh;
+  z-index: 1000;
+
+  /* overflow: hidden; */
+  &.isOpen {
+    transform: translateY(0);
+  }
+}
+
+#cart-items {
+  max-height: calc(100% - 120px);
+  /* Adjust the height based on your design */
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.sidebar>h2 {
+  text-align: center;
+  width: 80%;
+}
+
+#cart_total {
+  bottom: 0%;
+  position: fixed;
+
+}
+
+#facility {
+  width: 100%;
+}
+
+.cart_img {
+  width: 100%;
+}
+
+.cart_item_div {
+  display: flex;
+
+}
+
+.cart_img_div {
+  width: 30%
+}
+
+
+.name_div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.cart-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  padding: 5px 10px;
+
+}
+
+.quantity_div {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0px 20px; */
+}
+
+.quantity_div>p {
+  background-color: #dbe8f0;
+  padding: 2px 10px;
+  border-radius: 8px;
+}
+
+.quant_buttons_div>button {
+  padding: 3px 8px;
+  /* size: large; */
+
+}
+
+.quant_buttons_div button:first-child {
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+  background-color: #dbe8f0;
+
+}
+
+.quant_buttons_div button:nth-child(3) {
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+
+  background-color: #dbe8f0;
+}
+
+.quant_buttons_div button:nth-child(2) {
+  border: none;
+  background-color: transparent;
+}
+#gst_invoise{
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  color: gray;
+ 
+}
+#gst_invoise span{
+  color :rgb(84, 84, 84);
+  font-weight: 700;
+}
+
+#cart_total {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  /* border: 1px solid; */
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  padding:20px;
+  /* margin: auto; */
+  margin-left: -10px;
+  background-color: white;
+}
+#cart_total >img{
+ margin-top: 10px;
+ width: 100%;
+
+}
+#place_order{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+  margin-top: 10px;
+}
+#place_order>button{
+  padding: 13px 10px;
+  border: none;
+  background-color: #252525;
+  color: white;
+  font-weight: 800;
+  width: 50%;
+  border-radius: 5px;
+
+}
+#place_order>div> p{
+  color: gray;
+  font-size: x-small;
+}
+#total_amount2{
+  font-size: small;
+  color: gray;
+  font-family: 800;
+}
+#your_cart_heading{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+
+}
+#your_cart_heading>button{
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid gray;
+  font-weight: 900;
+  background-color: #dbe8f0;
+  border: none;
+
+}
+#your_cart_heading>h2{
+  /* border: 1px solid; */
+  margin-left: -20px;
+}
+
+
+/* cart end  */
+
 /* Media Queries Medium Screen */
 
 @media screen and (min-width: 768px) and (max-width: 1023px){

@@ -499,6 +499,7 @@ function addtocart(obj){
     cartArray.push(obj);
     localStorage.setItem('cart_list', JSON.stringify(cartArray));
 
+    cart_display(cartArray)
 }
 
 //Filter Function
@@ -613,3 +614,138 @@ function goToWL(){
        var selectedcategory = "Wireless-HeadPhones";
        localStorage.setItem("selected_category","Wireless-HeadPhones");
    }
+   
+//    cart start 
+let cartToggle = document.getElementById('cart');
+let side_value = document.getElementById('sidebar')
+let close_cart=document.getElementById('close_cart')
+
+close_cart.addEventListener("click",()=>{
+        side_value.classList.remove('isOpen');
+})
+
+cartToggle.addEventListener('click', () => {
+        side_value.classList.add('isOpen');
+ 
+})
+
+cart_display(cartArray)
+function cart_display(cartArray) {
+    // console.log("yes")
+    const cartItemsContainer = document.getElementById('cart-items');
+    cartItemsContainer.innerHTML = ''; // Clear previous content
+    // console.log(cartArray)
+    if (cartArray.length > 0) {
+        cartArray.map((elem, ind) => {
+            let cart_item_div = document.createElement('div');
+            cart_item_div.className = "cart_item_div";
+
+            let cart_img_div = document.createElement('div');
+            cart_img_div.className = "cart_img_div";
+
+            let cart_img = document.createElement('img');
+            cart_img.className = "cart_img"
+            cart_img.src = elem.Image;
+            cart_img_div.appendChild(cart_img); // Append the image to the div
+
+            let cart_detail = document.createElement('div');
+            cart_detail.className = 'cart-detail'
+            let name_div = document.createElement('div');
+            name_div.className = "name_div"
+
+            let cart_name = document.createElement("h4");
+            cart_name.textContent = elem.Name; // Use textContent to set text
+            let delbtn = document.createElement('button');
+            delbtn.textContent = "🗑️"
+            delbtn.addEventListener('click', () => {
+                remove(elem, ind)
+            })
+
+            name_div.append(cart_name, delbtn)
+
+            let cart_price = document.createElement("h4");
+            cart_price.textContent = "₹" + elem.Price; // Use textContent to set text
+
+            let quantity_div = document.createElement("div");
+            quantity_div.className = "quantity_div"
+            let charcol = document.createElement('p');
+            charcol.textContent = "CharcoalBlack";
+
+            let quant = document.createElement('div');
+            quant.className = "quant_buttons_div"
+            let decr = document.createElement('button');
+            decr.textContent = "-";
+            decr.addEventListener('click', () => {
+                decrement(elem, ind)
+            })
+            let item_quantity = document.createElement('button');
+            item_quantity.textContent = elem.Qty;
+            let incr = document.createElement('button');
+            incr.textContent = "+";
+            incr.addEventListener('click', () => {
+                increment(elem, ind)
+            })
+            quant.append(decr, item_quantity, incr);
+            quantity_div.append(charcol, quant);
+
+            cart_detail.append(name_div, cart_price, quantity_div);
+
+            cart_item_div.append(cart_img_div, cart_detail); // Append both image div and details div to cart_item_div
+
+            cartItemsContainer.appendChild(cart_item_div);
+
+
+        });
+    } else {
+        cartItemsContainer.textContent = "Empty cart ! Do Shopping !"; // Show "Empty cart" message
+    } total_cart()
+    total_cart2()
+}
+
+function remove(elem, ind) {
+    cartArray.splice(ind, 1);
+    localStorage.setItem('cart_list', JSON.stringify(cartArray));
+    cart_display(cartArray);
+
+}
+
+
+function total_cart() {
+    document.getElementById('total_amount').textContent = 0
+    let totalAmount = cartArray.reduce((acc, curr) => {
+        return acc + curr.Price *curr.Qty
+    }, 0)
+    document.getElementById('total_amount').textContent = "₹"+totalAmount
+
+}
+function total_cart2() {
+    document.getElementById('total_amount2').textContent = 0
+    let totalAmount = cartArray.reduce((acc, curr) => {
+        return acc + curr.MRP *curr.Qty
+    }, 0)
+    document.getElementById('total_amount2').textContent = "₹"+totalAmount
+
+}
+
+function increment(elem, ind) {
+    cartArray.forEach((item, index) => {
+        if (index === ind) {
+            item.Qty += 1;
+        }
+    });
+
+    localStorage.setItem('cart_list', JSON.stringify(cartArray));
+    cart_display(cartArray);
+}
+
+function decrement(elem, ind) {
+    cartArray.forEach((item, index) => {
+        if (index === ind && item.Qty > 1) {
+            item.Qty -= 1;
+        }
+    });
+
+    localStorage.setItem('cart_list', JSON.stringify(cartArray));
+    cart_display(cartArray);
+}
+// cart end 
