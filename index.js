@@ -597,4 +597,9 @@ function decrement(elem, ind) {
     localStorage.setItem('cart_list', JSON.stringify(cartArray));
     cart_display(cartArray);
 }
+
+let order= document.getElementById('order');
+order.addEventListener('click',()=>{
+    window.location.href="./payment/address.html"
+})
 // cart end 
