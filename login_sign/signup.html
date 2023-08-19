@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login_signup.css">
+    <title>Signup Page</title>
+</head>
+
+<body>
+    <a href="../index.html" id="goto_home">
+        <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boat_logo_small.webp?v=1672379935" alt="">
+    </a>
+    <div class="signup-container">
+        <div class="boat-logo">
+            <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boat_logo_small.webp?v=1672379935"
+                alt="Boat Logo">
+        </div>
+        <div class="signup-form">
+            <h2>Create Your Boat Lifestyle Account</h2>
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <a href="./login.html"><button type="submit">Sign Up</button></a>
+            <a href="./login.html" class="login-link">Already have an account? <span id="login_txt">Login</span> </a>
+        </div>
+    </div>
+    <script>
+        let access = JSON.parse(localStorage.getItem('access')) || [];
+        document.querySelector(".signup-form  a button").addEventListener("click", function (event) {
+            event.preventDefault();
+            let obj = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                password: document.getElementById("password").value
+            }
+            console.log(obj)
+            access.push(obj);
+            localStorage.setItem('access', JSON.stringify(access))
+            window.location.href = "./login.html";
+
+            alert(`Welcome to Boat Lifestyle, ${obj.name}!`);
+            document.getElementById("name").value = ""
+            document.getElementById("email").value = ""
+            document.getElementById("password").value = ""
+        });
+    </script>
+</body>
+
+</html>
