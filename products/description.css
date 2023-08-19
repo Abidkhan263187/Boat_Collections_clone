@@ -604,8 +604,8 @@ footer img {
     background-color: rgb(255, 255, 255);
     padding: 10px;
     width: 400px;
-    border: 1px solid gray;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid gray; */
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
     transition: transform 0.5s;
     height: 100vh;
     z-index: 1000;
@@ -709,7 +709,7 @@ footer img {
   #gst_invoise{
     display: flex;
     justify-content: space-between;
-    width: 35%;
+    width: 38%;
     color: gray;
    
   }
@@ -719,12 +719,10 @@ footer img {
   }
   
   #cart_total {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    /* border: 1px solid; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px 10px 0px 0px;
     width: 100%;
     padding:20px;
-    /* margin: auto; */
     margin-left: -10px;
     background-color: white;
   }

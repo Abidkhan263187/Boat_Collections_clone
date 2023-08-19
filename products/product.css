@@ -1,4 +1,8 @@
-
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
 /* navbar start  */
 .logo{
     /* border :1px solid; */
@@ -237,11 +241,16 @@ select:hover{
     width: 70%;
     height: auto;
     /* border:2px solid black ; */
+    display: grid;
+    gap: 5px;
     padding-left: 20px;
-    padding-top: 10px;
+    padding: 10px;
 }
 div > a>img{
     width: 100%;
+    height: 100%;
+    padding: 10px;
+    object-fit: fill;
 }
 .product_name{
     
@@ -256,7 +265,7 @@ div > a>img{
 .price_details{
     display: flex;
     justify-content: flex-start;
-    margin-top: -20px;
+    /* margin-top: -20px; */
 }
 
 .percentoff{
@@ -312,9 +321,9 @@ div > a>img{
     margin-top: 0px;
     margin-bottom: 10px;
 }
-button:hover{
+/* button:hover{
     background-color: #ff0000;
-}
+} */
 .nmbtn{
     width: 90%;
     height: 40px;
@@ -388,8 +397,8 @@ hr{
   background-color: rgb(255, 255, 255);
   padding: 10px;
   width: 400px;
-  border: 1px solid gray;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  /* border: 1px solid gray; */
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   transition: transform 0.5s;
   height: 100vh;
   z-index: 1000;
@@ -402,9 +411,9 @@ hr{
 
 #cart-items {
   max-height: calc(100% - 120px);
-  /* Adjust the height based on your design */
   overflow-y: auto;
   padding-right: 10px;
+
 }
 
 .sidebar>h2 {
@@ -440,8 +449,13 @@ hr{
   display: flex;
   justify-content: space-between;
   width: 100%;
+  height: max-content;
 
 }
+/* .name_div>button{
+  background-color: green;
+ 
+} */
 
 .cart-detail {
   display: flex;
@@ -493,8 +507,9 @@ hr{
 #gst_invoise{
   display: flex;
   justify-content: space-between;
-  width: 35%;
+  width: 38%;
   color: gray;
+  /* border: 1px solid; */
  
 }
 #gst_invoise span{
@@ -503,12 +518,10 @@ hr{
 }
 
 #cart_total {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  /* border: 1px solid; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px 10px 0px 0px;
   width: 100%;
   padding:20px;
-  /* margin: auto; */
   margin-left: -10px;
   background-color: white;
 }

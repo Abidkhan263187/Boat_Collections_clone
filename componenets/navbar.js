@@ -1,31 +1,32 @@
+// import { goToBW } from "../index.js"
 function navbar(){
     return ` <nav>
     <div>
         <a href="index.html"><img  class="logo"src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boat_logo_small.webp?v=1672379935" alt="logo" onclick="showMain()"></a>
         <div>
             <span>
-                <a href="#" onclick="showDiv()" class="dropbtn">CATEGORIES</a>
+                <a href="#"  class="dropbtn">Categories</a>
                 <i class="fa-solid fa-chevron-down"></i>
                 <div id="myDropdown" class="dropdown-content">
                     <div >
                         <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-TWS_100x.png?v=1663752600" alt="">
-                        <a onclick="goToWL()" href="products.html">Airdopes True Wireless</a>
+                        <a onclick="goToWL()" href="./products/product.html">Airdopes True Wireless</a>
                     </div>
                     <div >
                         <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Rectangle271_100x.png?v=1663752867" alt="">
-                        <a  onclick="goToWH()" href="products.html">Rockerz Wireless</a>
+                        <a  onclick="goToWH()" href="./products/product.html">Rockerz Wireless</a>
                     </div>
                     <div >
                         <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/wave-call-Copy_dcaa5c5f-2574-4a71-ba0e-a77e7a82abfa_600x.png?v=1678190676" alt="">
-                       <a onclick="goToW()" href="products.html"> Smart Watches</a>
+                       <a onclick="goToW()" href="./products/product.html"> Smart Watches</a>
                     </div>
                     <div >
                         <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/latest_background_b4f773ca-05d9-41cc-a7cf-3104993ae895_100x.png?v=1663753167" alt="">
-                        <a  onclick="goToBW()"href="products.html">Bassheads Wired</a> 
+                        <a  onclick="goToBW()"href="./products/product.html">Bassheads Wired</a> 
                     </div>
                     <div >
                         <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/box-5_100x.png?v=1663753243" alt="">
-                         <a  onclick="goToSS()" href="products.html">Stone Speakers</a> 
+                         <a  onclick="goToSS()" href="./products/product.html">Stone Speakers</a> 
                     </div>
                     <div onclick="goToAH()">
                         <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Collections_5baef8f1-a67a-40a5-a537-4258c6caae6a_100x.png?v=1663753280" alt="">
@@ -41,7 +42,7 @@ function navbar(){
                     </div>
                     <div class="limited_ed" >
                         <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-limited-edition_100x.png?v=1675683940" alt="">
-                        <a  onclick="goToLE()" href="products.html">Limited Edition</a> 
+                        <a  onclick="goToLE()" href="./products/product.html">Limited Edition</a> 
                     </div>
                     <div onclick="goToT()">
                         <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/MISFIT-shop_100x.png?v=1663753379" alt="">
@@ -53,10 +54,10 @@ function navbar(){
                     </div>
                 </div>
             </span>
-            <a href="dailydeals3.html">DAILY DEALS</a>
-            <a href="Gift.html">GIFT WITH BOAT</a>
+            <a href="dailydeals3.html">Daily Deals</a>
+            <a href="Gift.html">Gift With Boat</a>
             <span>
-                <a href="home11.html">MORE</a>
+                <a href="home11.html">More</a>
                 <i class="fa-solid fa-chevron-down"></i>
                 <div class="dropdown-content2">
                     <a href="advertise.html">Do What Floats Your boAt</a>

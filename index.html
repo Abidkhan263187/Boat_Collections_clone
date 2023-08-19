@@ -1,38 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boat-Collections</title>
-    <link rel="stylesheet" href="./index.css">
+
+    <link rel="stylesheet" type="text/css" href="./index.css">
     <script src="https://kit.fontawesome.com/36ecff000a.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <div>
-       
-       <div id="nav"></div>
-       <div class="carousel-container">
-        <div class="carousel">
-            <div class="carousel-item"><img src="https://m.media-amazon.com/images/S/aplus-media/vc/ffd3e32d-76a5-4c1f-8ae8-68bcff20159b._CR0,0,970,300_PT0_SX970__.jpg" alt="Image 3"></div>
-            <div class="carousel-item"><img src="https://m.media-amazon.com/images/S/aplus-media/vc/c867e4fb-e506-40d9-999e-409f885869ce._CR0,0,970,300_PT0_SX970__.jpg" alt="Image 2"></div>
-             <div class="carousel-item"><img src="https://m.media-amazon.com/images/S/aplus-media/vc/6126ecb2-43e3-4f4d-b8ff-55b451553281.__CR0,0,970,300_PT0_SX970_V1___.png" alt="Image 3"></div>
-            <div class="carousel-item"> <img src="https://m.media-amazon.com/images/S/aplus-media/vc/8faa954a-4f44-45b3-b606-42bb081910a6._CR0,0,970,300_PT0_SX970__.jpg" alt="Image 3"></div>
-           
-            <div class="carousel-item"><img src=" https://m.media-amazon.com/images/S/aplus-media/vc/784ee17d-508b-4c2b-a22f-3d582d95326b._CR0,0,970,300_PT0_SX970__.png" alt="Image 3"></div>
-          <div class="carousel-item"><img src="https://www.boat-lifestyle.com/cdn/shop/collections/2000x600_1200x1200_crop_center.jpg?v=1653917711" alt="Image 1"></div>
-       
-        
-        </div>
-        <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
-        <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
-      </div>
 
-      <div id="categories">
-        <h2>Shop by categories</h2>
-        <div id="cat_main"></div>
-      </div>
+<body>
+    <div id="main">
+
+        <div id="navigation">
+            <nav>
+                <div>
+                    <a href="index.html"><img class="logo"
+                            src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boat_logo_small.webp?v=1672379935"
+                            alt="logo" onclick="showMain()"></a>
+                    <div>
+                        <span>
+                            <a href="#" class="dropbtn">Categories</a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <div id="myDropdown" class="dropdown-content">
+                                <div>
+                                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-TWS_100x.png?v=1663752600"
+                                        alt="">
+                                    <a onclick="goToWL()" href="./products/product.html">Airdopes True Wireless</a>
+                                </div>
+                                <div>
+                                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Rectangle271_100x.png?v=1663752867"
+                                        alt="">
+                                    <a onclick="goToWH()" href="./products/product.html">Rockerz Wireless</a>
+                                </div>
+                                <div>
+                                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/products/wave-call-Copy_dcaa5c5f-2574-4a71-ba0e-a77e7a82abfa_600x.png?v=1678190676"
+                                        alt="">
+                                    <a onclick="goToW()" href="./products/product.html"> Smart Watches</a>
+                                </div>
+                                <div>
+                                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/latest_background_b4f773ca-05d9-41cc-a7cf-3104993ae895_100x.png?v=1663753167"
+                                        alt="">
+                                    <a onclick="goToBW()" href="./products/product.html">Bassheads Wired</a>
+                                </div>
+                                <div>
+                                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/box-5_100x.png?v=1663753243"
+                                        alt="">
+                                    <a onclick="goToSS()" href="./products/product.html">Stone Speakers</a>
+                                </div>
+                                <div id="khaas" onclick="goToAH()">
+                                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Collections_5baef8f1-a67a-40a5-a537-4258c6caae6a_100x.png?v=1663753280"
+                                        alt="">
+                                    <p id="khaas2">Aavante Home Audio</p>
+                                </div>
+                                <div onclick="goToMA()">
+                                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/cables_1_100x.png?v=1678374618"
+                                        alt="">
+                                    <p>Mobile Accessories</p>
+                                </div>
+                                <div onclick="goToW()">
+                                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/New-Category-Banners_with-Trebal_09_100x.png?v=1675683871"
+                                        alt="">
+                                    <p>Trebel for Women</p>
+                                </div>
+                                <div id="khass3" class="limited_ed">
+                                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/dropdown-limited-edition_100x.png?v=1675683940"
+                                        alt="">
+                                    <a onclick="goToLE()" href="./products/product.html">Limited Edition</a>
+                                </div>
+                                <div onclick="goToT()">
+                                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/MISFIT-shop_100x.png?v=1663753379"
+                                        alt="">
+                                    <p>Misfit Trimmers</p>
+                                </div>
+                                <div onclick="goToIG()">
+                                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/collections/Immortal_category_Image_100x.png?v=1663753419"
+                                        alt="">
+                                    <p>Immortal Gaming</p>
+                                </div>
+                            </div>
+                        </span>
+                        <a href="dailydeals3.html">Daily Deals</a>
+                        <a href="Gift.html">Gift With Boat</a>
+                        <span>
+                            <a href="home11.html">More</a>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <div class="dropdown-content2">
+                                <a href="advertise.html">Do What Floats Your boAt</a>
+                                <a href="blogs.html
+                                ">Blogs</a>
+                                <a href=" bulkorder.html">Corporate Orders</a>
+                                <a href="">Earn ₹100</a>
+                                <a href="">Careers</a>
+                                <a href="">Social Responsibility</a>
+                                <a href="">Meet the boAtheads</a>
+                            </div>
+                        </span>
+
+
+
+
+                    </div>
+                    <div id="main_search">
+
+                        <div id="search_div">
+                            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                            <input placeholder="search" />
+                        </div>
+                        <a href="login.html" id="uppics"><i class="fa-solid fa-user fa-xl"></i></a>
+
+                        <a href="#" id="cart"><i class="fa-solid fa-cart-shopping fa-xl"></i> </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- ************************************************************************** -->
+        <div id="sidebar" class="sidebar">
+            <div id="your_cart_heading">
+                <h2> Your Cart</h2>
+              
+                <button id="close_cart">X</button>
+            </div> &nbsp; <hr>
+            <img id="facility" src="./componenets/images/img6.png" alt="">
+            <div id="cart-items"> </div>
+          
+            <div id="cart_total">
+                <div id="gst_invoise">
+                    <input type="checkbox">
+                    <p>Get <span>GST</span> Invoice</p>
+                </div>
+
+                <img src="./componenets/images/img7.png" alt="">
+                <div id="place_order">
+                    <div>
+                        <s id="total_amount2"> </s>
+                        <h3 id="total_amount">0</h3>
+                        <p>Inclusive of all taxes</p>
+                    </div>
+
+                    <button>Confirm Order</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ********************************************************************************* -->
+
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item"><img
+                        src="https://m.media-amazon.com/images/S/aplus-media/vc/ffd3e32d-76a5-4c1f-8ae8-68bcff20159b._CR0,0,970,300_PT0_SX970__.jpg"
+                        alt="Image 3"></div>
+                <div class="carousel-item"><img
+                        src="https://m.media-amazon.com/images/S/aplus-media/vc/c867e4fb-e506-40d9-999e-409f885869ce._CR0,0,970,300_PT0_SX970__.jpg"
+                        alt="Image 2"></div>
+                <div class="carousel-item"><img
+                        src="https://m.media-amazon.com/images/S/aplus-media/vc/6126ecb2-43e3-4f4d-b8ff-55b451553281.__CR0,0,970,300_PT0_SX970_V1___.png"
+                        alt="Image 3"></div>
+                <div class="carousel-item"> <img
+                        src="https://m.media-amazon.com/images/S/aplus-media/vc/8faa954a-4f44-45b3-b606-42bb081910a6._CR0,0,970,300_PT0_SX970__.jpg"
+                        alt="Image 3"></div>
+
+                <div class="carousel-item"><img
+                        src=" https://m.media-amazon.com/images/S/aplus-media/vc/784ee17d-508b-4c2b-a22f-3d582d95326b._CR0,0,970,300_PT0_SX970__.png"
+                        alt="Image 3"></div>
+                <div class="carousel-item"><img
+                        src="https://www.boat-lifestyle.com/cdn/shop/collections/2000x600_1200x1200_crop_center.jpg?v=1653917711"
+                        alt="Image 1"></div>
+
+
+            </div>
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+
+        <div id="categories">
+            <h3>Shop by categories</h3>
+            <div id="cat_main"></div>
+        </div>
+        <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+        <div id="img_poster">
+            <img src="./componenets/images/img.png" alt="">
+        </div>
+        <div id="best_buds">
+            <h2>Best Sellers</h2>
+            <div id='buds_main'></div>
+        </div>
+        <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+        <div id="img_poster">
+            <img src="./componenets/images/img1.png" alt="">
+        </div>
+        <div id="best_watch">
+            <h2>Best Sellers</h2>
+            <div id='watch_main'></div>
+        </div>
+
+        <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+        <div id="img_poster">
+            <img src="./componenets/images/img2.png" alt="">
+        </div>
+        <div id="best_necks">
+            <h2>Best Sellers</h2>
+            <div id='neck_main'></div>
+        </div>
+        <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+        <div id="img_poster">
+            <img src="./componenets/images/img3.png" alt="">
+        </div>
+        <div id="best_heads">
+            <h2>Best Sellers</h2>
+            <div id='heads_main'></div>
+        </div>
+        <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+        <div id="img_poster">
+            <img src="./componenets/images/img4.png" alt="">
+        </div>
+        <div id="best_speakers">
+            <h2>Best Sellers</h2>
+            <div id='speakers_main'></div>
+        </div>
+        <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+        <div id=" footer">
+            <footer>
+                <div>
+                    <img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/boAt_logo.svg" />
+                    <h3>Subscribe to our email alerts!</h3>
+                    <h5>Enter your email address</h5>
+                    <input type="email" placeholder="Your Email">&nbsp;
+                    <button> Subscribe!</button>
+                </div>
+                <div>
+                    <h3>Shop</h3>
+                    <p id="links_footer">
+                        <a href="#">True Wireless Earbuds</a>
+                        <a href="#">Wireless Headphones</a>
+                        <a href="#">Wired Headphones</a>
+                        <a href="#">Wireless Speakers</a>
+                        <a href="#">Home Audio</a>
+                        <a href="#">Mobile Accessories</a>
+                        <a href="#">Smart Watches</a>
+                        <a href="#">TRebel</a>
+                        <a href="#">Misfit</a>
+                        <a href="#">Gift Card</a>
+                        <a href="#">Earn ₹100</a>
+                    </p>
+                </div>
+                <div>
+                    <h3>Help</h3>
+                    <p id="links_footer">
+                        <a href="#">Track Your Order</a>
+                        <a href="#">Warranty & Support</a>
+                        <a href="#">Return Policy</a>
+                        <a href="#">Service Centers</a>
+                        <a href="#">Bulk Orders</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">Why Buy Direct</a>
+                    </p>
+                </div>
+                <div>
+                    <h3>Company</h3>
+                    <p id="links_footer">
+                        <a href="#">About boAt</a>
+                        <a href="#">News</a>
+                        <a href="#">Read Our Blog</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Security</a>
+                        <a href="#">Investor Relations</a>
+                        <a href="#">Social Responsibility</a>
+                        <a href="#">Warranty Policy</a>
+                    </p>
+                </div>
+            </footer>
+            <div class="bottom-footer">
+                <h4>Let's get social</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-github fa-xl"></i></a>&nbsp;&nbsp;
+                    <a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>&nbsp;&nbsp;
+                    <a href="#"> <i class="fa-brands fa-linkedin fa-xl"></i></a>&nbsp;&nbsp;
+                    <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                </div>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+                <p>&copy; 2023 Abid khan &copy; All Rights Reserved.</p>
+                <p>For queries contact us: +91-62-8000-7521 Email : abidkhan263187@gmail.com 143001 -asr (Punjab) India
+                </p>
+            </div>
+        </div>
 
     </div>
 </body>
+
 </html>
-<script type="module" src="./index.js"></script>
+<script src="./index.js"></script>
