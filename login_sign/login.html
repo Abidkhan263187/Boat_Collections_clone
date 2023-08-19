@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Google Login Example</title>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="445757474362-mftj8sh8mqade4fel2m40ig8fboul7vh.apps.googleusercontent.com.apps.googleusercontent.com">
+</head>
+
+<body>
+    <h1>Google Login Example</h1>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <div id="profile-info" style="display: none;">
+        <p><strong>Profile Information:</strong></p>
+        <img id="profile-picture" width="100" height="100" alt="Profile Picture">
+        <p><span id="profile-name"></span></p>
+        <p><span id="profile-email"></span></p>
+    </div>
+    <button id="sign-out" style="display: none;" onclick="signOut()">Sign Out</button>
+
+    <script>
+        function onSignIn(googleUser) {
+            const profile = googleUser.getBasicProfile();
+            document.getElementById('profile-info').style.display = 'block';
+            document.getElementById('profile-picture').src = profile.getImageUrl();
+            document.getElementById('profile-name').textContent = profile.getName();
+            document.getElementById('profile-email').textContent = profile.getEmail();
+            document.getElementById('sign-out').style.display = 'block';
+        }
+
+        function signOut() {
+            const auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                document.getElementById('profile-info').style.display = 'none';
+                document.getElementById('sign-out').style.display = 'none';
+            });
+        }
+    </script>
+</body>
+
+</html>
