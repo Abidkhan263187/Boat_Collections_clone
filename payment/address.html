@@ -86,36 +86,45 @@
         button:hover {
             background-color: #0056b3;
         }
-        
+
 
         @media screen and (max-width: 767px) {
-    .container {
-        width: 100%;
-    }
+            .container {
+                width: 80%;
+                margin: auto;
+            }
 
-    h1 {
-        font-size: 1.5rem; /* Use appropriate value with unit */
-    }
+            h1 {
+                font-size: 1.5rem;
+               
+                /* border: 1px solid; */
+                width: max-content;
+                margin: 3% auto;
+            }
 
-    .address-form {
-        width: 80%;
-    }
-}
+            .address-form {
+                width: 70%;
+            }
+        }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    .container {
-        width: 80%;
-    }
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .container {
+                width: 80%;
+            }
 
-    h1 {
-        font-size: 1.5rem; /* Use appropriate value with unit */
-    }
+            h1 {
+                font-size: 1.5rem;
+             
+                border: 1px solid;
+                width: max-content;
 
-    .address-form {
-        width: 40%;
-    }
-}
+                margin: auto;
+            }
 
+            .address-form {
+                width: 50%;
+            }
+        }
     </style>
 </head>
 
@@ -138,7 +147,7 @@
     </div>
     <script>
 
-        
+
         document.addEventListener("DOMContentLoaded", function () {
             const submitBtn = document.getElementById("submitBtn");
             submitBtn.addEventListener("submit", submitForm);
@@ -155,7 +164,7 @@
                 address: document.getElementById("address").value
             }
 
-             localStorage.setItem('address',JSON.stringify(obj))
+            localStorage.setItem('address', JSON.stringify(obj))
             // You can perform further processing or validation here
             // For example, you can send this data to a server using AJAX
 

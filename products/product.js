@@ -804,3 +804,8 @@ const cat = document.getElementById('categories');
 menuIcon.addEventListener('click', () => {
     cat.classList.toggle('active');
 });
+
+let order = document.getElementById('order');
+order.addEventListener('click', () => {
+    window.location.href = "../payment/address.html"
+})
