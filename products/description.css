@@ -862,7 +862,8 @@ footer img {
 #navigation2 {
   display: none;
 }
-#spec_img>img{
+
+#spec_img>img {
   width: 100%;
 }
 
@@ -881,7 +882,7 @@ footer img {
   }
 
   #mob_inp_div {
-  border: 1px solid gray;
+    border: 1px solid gray;
     width: 25%;
     background-color: white;
     color: black;
@@ -916,9 +917,10 @@ footer img {
 
   /* end  */
 
-  #navigation{
+  #navigation {
     display: none;
   }
+
   .col-div {
     /* border: 1px solid; */
     width: 100%;
@@ -963,20 +965,27 @@ footer img {
   .desc-button {
     width: 100%;
   }
+
   #feature1_inner>p {
     font-size: smaller;
-  } 
-  #features_fst{
+  }
+
+  #features_fst {
     gap: 0px;
     justify-content: space-around;
     padding: 30px 20px;
-  } #feature_heading {
+  }
+
+  #feature_heading {
     font-size: large;
   }
+
   #feature2_inner>p {
     /* margin-top: 20px; */
     font-size: smaller;
-  } #spec_right {
+  }
+
+  #spec_right {
     padding: 50px;
     text-align: center;
   }
@@ -1031,6 +1040,10 @@ footer img {
   .love-right {
     width: 100%;
 
+  }
+
+  #gst_invoise p {
+    font-size: small;
   }
 
   .love-left img {

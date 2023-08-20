@@ -467,28 +467,28 @@ function goToLE() {
 //    cart start 
 let cartToggle = document.getElementById('cart');
 let side_value = document.getElementById('sidebar')
-let close_cart=document.getElementById('close_cart')
+let close_cart = document.getElementById('close_cart')
 
-close_cart.addEventListener("click",()=>{
-        side_value.classList.remove('isOpen');
+close_cart.addEventListener("click", () => {
+    side_value.classList.remove('isOpen');
 })
 
 cartToggle.addEventListener('click', () => {
-        side_value.classList.add('isOpen');
- 
+    side_value.classList.add('isOpen');
+
 })
 // for mobile 
 let cartToggle2 = document.getElementById('cart_mob');
 let side_value2 = document.getElementById('sidebar')
-let close_cart2=document.getElementById('close_cart')
+let close_cart2 = document.getElementById('close_cart')
 
-close_cart2.addEventListener("click",()=>{
-        side_value2.classList.remove('isOpen');
+close_cart2.addEventListener("click", () => {
+    side_value2.classList.remove('isOpen');
 })
 
 cartToggle2.addEventListener('click', () => {
-        side_value2.classList.add('isOpen');
- 
+    side_value2.classList.add('isOpen');
+
 })
 
 cart_display(cartArray)
@@ -575,17 +575,17 @@ function remove(elem, ind) {
 function total_cart() {
     document.getElementById('total_amount').textContent = 0
     let totalAmount = cartArray.reduce((acc, curr) => {
-        return acc + curr.Price *curr.Qty
+        return acc + curr.Price * curr.Qty
     }, 0)
-    document.getElementById('total_amount').textContent = "₹"+totalAmount
+    document.getElementById('total_amount').textContent = "₹" + totalAmount
 
 }
 function total_cart2() {
     document.getElementById('total_amount2').textContent = 0
     let totalAmount = cartArray.reduce((acc, curr) => {
-        return acc + curr.MRP *curr.Qty
+        return acc + curr.MRP * curr.Qty
     }, 0)
-    document.getElementById('total_amount2').textContent = "₹"+totalAmount
+    document.getElementById('total_amount2').textContent = "₹" + totalAmount
 
 }
 
@@ -611,16 +611,17 @@ function decrement(elem, ind) {
     cart_display(cartArray);
 }
 
-let order= document.getElementById('order');
-order.addEventListener('click',()=>{
-    window.location.href="./payment/address.html"
+let order = document.getElementById('order');
+order.addEventListener('click', () => {
+    window.location.href = "./payment/address.html"
 })
 // cart end 
 
+
 // moblie nav bar 
+
 const menuIcon = document.getElementById('bar');
 const cat = document.getElementById('categories');
-
 menuIcon.addEventListener('click', () => {
     cat.classList.toggle('active');
 });

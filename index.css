@@ -869,12 +869,13 @@ footer img {
   }
 
   .logo {
-    /*  white; */
     width: 50%;
     margin-left: 20px;
   }
+
+
   #mob_inp_div {
-  
+
     width: 22%;
     background-color: white;
     color: black;
@@ -922,7 +923,7 @@ footer img {
     display: flex;
   }
 
- 
+
 }
 
 @media (max-width: 768px) {
@@ -946,10 +947,17 @@ footer img {
     display: block;
   }
 
+
   .logo {
     /*  white; */
-    width: 50%;
-    margin-left: 20px;
+    /* border: 1px solid; */
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  #boat_home_logo {
+    /* border: 1px solid; */
+    width: 80px;
   }
 
   #mob_inp_div {
