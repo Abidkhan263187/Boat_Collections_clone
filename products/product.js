@@ -782,3 +782,11 @@ function decrement(elem, ind) {
     cart_display(cartArray);
 }
 // cart end 
+// moblie nav bar 
+
+const menuIcon = document.getElementById('bar');
+const cat = document.getElementById('categories');
+
+menuIcon.addEventListener('click', () => {
+    cat.classList.toggle('active');
+});
