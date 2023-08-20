@@ -186,6 +186,21 @@ cartToggle.addEventListener('click', () => {
  
 })
 
+// for mobile 
+let cartToggle2 = document.getElementById('cart_mob');
+let side_value2 = document.getElementById('sidebar')
+let close_cart2=document.getElementById('close_cart')
+
+close_cart2.addEventListener("click",()=>{
+        side_value2.classList.remove('isOpen');
+})
+
+cartToggle2.addEventListener('click', () => {
+        side_value2.classList.add('isOpen');
+ 
+})
+
+
 cart_display(cartArray)
 function cart_display(cartArray) {
     // console.log("yes")
@@ -306,3 +321,11 @@ function decrement(elem, ind) {
     cart_display(cartArray);
 }
 // cart end 
+// moblie nav bar 
+
+const menuIcon = document.getElementById('bar');
+const cate = document.getElementById('categories');
+
+menuIcon.addEventListener('click', () => {
+    cate.classList.toggle('active');
+});

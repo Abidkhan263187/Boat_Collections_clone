@@ -7,15 +7,17 @@
   /* font-family: 'Roboto', sans-serif; */
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /* cart start  */
 
 .sidebar {
   position: fixed;
-  /* You can use 'absolute' if you prefer */
   top: 0%;
-  /* Adjust this value to position vertically */
   right: 0;
-  /* Position at the right edge of the viewport */
   transform: translateX(110%);
   background-color: rgb(255, 255, 255);
   padding: 10px;
@@ -255,7 +257,7 @@ nav>div>div:first-of-type>span>a {
   /* border:1px solid; */
   display: flex;
   justify-content: space-between;
-  width: 30%;
+  width: 25%;
   align-items: center;
 
 }
@@ -272,7 +274,7 @@ nav>div>div:first-of-type>span>a {
   border: none;
   outline: none;
   font-size: large;
-
+  width: 80%;
 }
 
 .dropdown-content2 {
@@ -353,7 +355,7 @@ nav>div>div:first-of-type>span {
 
 nav>div>div:first-of-type>span>div>div>a,
 p {
-  font-size: small;
+  font-size: x-small;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -813,6 +815,7 @@ footer img {
   color: white;
   text-decoration: none;
 }
+
 .categories a:hover {
   background-color: #ababab;
   padding: 5px 10px;
@@ -831,7 +834,7 @@ footer img {
 
 /* mobile nav end   */
 
-@media  (max-width: 1024px) {
+@media (max-width: 1024px) {
   #neck_main {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -864,6 +867,20 @@ footer img {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .logo {
+    /*  white; */
+    width: 50%;
+    margin-left: 20px;
+  }
+  #mob_inp_div {
+  
+    width: 22%;
+    background-color: white;
+    color: black;
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin-left: 50%;
+  }
 
   /* navigation mobole  */
   #navigation2 {
@@ -871,8 +888,8 @@ footer img {
   }
 
   #mob_inp_div {
-  
-    width: 30%;
+
+    width: 25%;
     background-color: white;
     color: black;
     padding: 2px 10px;
@@ -903,9 +920,25 @@ footer img {
   .categories.active {
     display: flex;
   }
+
+ 
 }
 
 @media (max-width: 768px) {
+
+
+  /* cart styles  */
+  .sidebar {
+    width: 90%;
+
+    &.isOpen {
+      transform: translateY(0);
+    }
+  }
+
+  #gst_invoise {
+    width: 40%;
+  }
 
   /* mobile navigation styles  */
   #navigation2 {
@@ -919,7 +952,7 @@ footer img {
   }
 
   #mob_inp_div {
-  border: 1px solid gray;
+    border: 1px solid gray;
     width: 30%;
     background-color: white;
     color: black;
@@ -998,6 +1031,8 @@ footer img {
     flex-direction: column;
   }
 }
+
+
 
 
 

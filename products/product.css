@@ -3,6 +3,11 @@
   margin: 0%;
   box-sizing: border-box;
 }
+
+a{
+  text-decoration: none;
+  color: black;
+}
 /* navbar start  */
 .logo{
     /* border :1px solid; */
@@ -45,7 +50,7 @@ nav {
 
 
   #search_div{
-  
+   /* border: 1px solid; */
     padding: 5px 20px;
     border-radius: 10px;
     background-color: #e8e8e8;
@@ -69,6 +74,8 @@ nav {
     border: none;
     outline: none;
     font-size: large;
+    /* border: 1px solid; */
+    width: 80%;
     
   }
   
@@ -225,9 +232,6 @@ select:hover{
 .image{
     width: 35%;
     height: auto;
-    /* border:1px solid gray ;
-    border-top-left-radius:10px;
-    border-bottom-left-radius: 10px; */
     border-right: 1px solid #e7e7e7;
     text-align: center;
     
@@ -409,6 +413,7 @@ hr{
   }
 }
 
+
 #cart-items {
   max-height: calc(100% - 120px);
   overflow-y: auto;
@@ -513,7 +518,7 @@ hr{
   justify-content: space-between;
   width: 38%;
   color: gray;
-  /* border: 1px solid; */
+  /*  */
  
 }
 #gst_invoise span{
@@ -576,7 +581,7 @@ hr{
 
 }
 #your_cart_heading>h2{
-  /* border: 1px solid; */
+  /*  */
   margin-left: -20px;
 }
 
@@ -648,6 +653,13 @@ hr{
   #navigation2 {
     display: block;
   }
+  .sidebar {
+    width: 60%;
+
+    &.isOpen {
+      transform: translateY(0);
+    }
+  }
   #navigation {
     display: none;
   }
@@ -705,7 +717,13 @@ hr{
   #navigation{
     display: none;
   }
+  #operations{
+  padding: 0px 10px;
 
+}
+#title{
+  padding: 0px 10px;
+}
   /* mobile navigation styles  */
   #navigation2 {
     display: block;
@@ -755,6 +773,7 @@ hr{
      #parent{
          display: grid;
          grid-template-columns: repeat(1,1fr);
+         /* padding: 0px 10px; */
      }
      #navmedia{
       display: none;
@@ -788,7 +807,7 @@ hr{
   }
 
   #links_footer{
-    /* border: 1px solid; */
+    /*  */
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
@@ -869,6 +888,23 @@ footer img{
   /* media queries  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
  
   @media (max-width: 768px) {
+
+     /* cart styles  */
+  .sidebar {
+    width: 90%;
+    &.isOpen {
+      transform: translateY(0);
+    }
+  }
+  #gst_invoise {
+    width: 40%;
+  }
+  /* ************************* */
+  select {
+    height: 40px;
+    width: 35%;
+  
+}
     .bottom-footer {
       padding: 10px;
     }
@@ -882,6 +918,7 @@ footer img{
         flex-direction: column;
       }
   }
+  
   
   
 

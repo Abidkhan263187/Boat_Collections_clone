@@ -661,6 +661,19 @@ cartToggle.addEventListener('click', () => {
         side_value.classList.add('isOpen');
  
 })
+// for mobile 
+let cartToggle2 = document.getElementById('cart_mob');
+let side_value2 = document.getElementById('sidebar')
+let close_cart2=document.getElementById('close_cart')
+
+close_cart2.addEventListener("click",()=>{
+        side_value2.classList.remove('isOpen');
+})
+
+cartToggle2.addEventListener('click', () => {
+        side_value2.classList.add('isOpen');
+ 
+})
 
 cart_display(cartArray)
 function cart_display(cartArray) {
