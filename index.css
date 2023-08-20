@@ -251,13 +251,14 @@ nav>div>div:first-of-type>span>a {
   padding: 5px 20px;
   border-radius: 10px;
   background-color: #e8e8e8;
+  margin-right: 30px;
 }
 
 #main_search {
   /* border:1px solid; */
   display: flex;
   justify-content: space-between;
-  width: 25%;
+  width: 30%;
   align-items: center;
 
 }

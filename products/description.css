@@ -61,6 +61,7 @@ nav>div>div:first-of-type>span>a {
   padding: 5px 20px;
   border-radius: 10px;
   background-color: #e8e8e8;
+  margin-right: 30px;
 }
 
 #main_search {
@@ -71,6 +72,7 @@ nav>div>div:first-of-type>span>a {
   align-items: center;
 
 }
+
 
 #main_search a {
   text-decoration: none;

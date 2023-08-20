@@ -49,21 +49,23 @@ nav {
   }
 
 
-  #search_div{
-   /* border: 1px solid; */
+  #search_div {
+
     padding: 5px 20px;
     border-radius: 10px;
     background-color: #e8e8e8;
+    margin-right: 30px;
   }
-
-  #main_search{
+  
+  #main_search {
     /* border:1px solid; */
     display: flex;
     justify-content: space-between;
-    width:30%;
+    width: 30%;
     align-items: center;
- 
+  
   }
+  
   #main_search a{
     text-decoration: none;
     color: black;;
