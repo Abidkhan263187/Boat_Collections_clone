@@ -603,3 +603,11 @@ order.addEventListener('click',()=>{
     window.location.href="./payment/address.html"
 })
 // cart end 
+
+// moblie nav bar 
+const menuIcon = document.getElementById('bar');
+const cat = document.getElementById('categories');
+
+menuIcon.addEventListener('click', () => {
+    cat.classList.toggle('active');
+});
