@@ -622,11 +622,11 @@ function homepagecategory(str) {
 }
 
 //Notify Me
-var notifyproduct = JSON.parse(localStorage.getItem("notify_list")) || []; 
+var notifyproduct = JSON.parse(localStorage.getItem("notify_list")); 
 function  notifyme(elem){
-    console.log("yes")
-    notifyproduct.push(elem);
-    localStorage.setItem("notify_list",JSON.stringify(notifyproduct));
+    // console.log("yes")
+    // notifyproduct.push(elem);
+    localStorage.setItem("notify_list",JSON.stringify(elem));
 }
 // navbar functionality
 

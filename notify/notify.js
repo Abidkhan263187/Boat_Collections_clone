@@ -1,7 +1,7 @@
-var notifyproduct1 = JSON.parse(localStorage.getItem("notify_list")) || [];
-displaynotifyproduct();
-function displaynotifyproduct(){
-    notifyproduct1.map(function(elem,index){
+var notifyproduct1 = JSON.parse(localStorage.getItem("notify_list"));
+displaynotifyproduct(notifyproduct1);
+function displaynotifyproduct(obj){
+    // document.querySelector("#parent").textContent=""
         var div = document.createElement("div");
         div.setAttribute("class","child");
 
@@ -9,8 +9,8 @@ function displaynotifyproduct(){
         div1.setAttribute("class","image");
 
         var image = document.createElement("img");
-        image.setAttribute("src",elem.Image);
-        image.setAttribute("alt",elem.Name);
+        image.setAttribute("src",obj.Image);
+        image.setAttribute("alt",obj.Name);
 
         div1.append(image);
 
@@ -20,9 +20,9 @@ function displaynotifyproduct(){
         var anch1 = document.createElement("a");
         anch1.setAttribute("href","hello.html");
         anch1.setAttribute("class","product_name");
-        anch1.textContent = elem.Name;
+        anch1.textContent = obj.Name;
         anch1.addEventListener("click",function(){
-            details(elem);
+            details(obj);
         });
 
         var div3 = document.createElement("div");
@@ -30,14 +30,14 @@ function displaynotifyproduct(){
 
         var h42 = document.createElement("h4");
         h42.setAttribute("class","price");
-        h42.textContent = elem.Price;
+        h42.textContent = obj.Price;
 
         var h43 = document.createElement("h4");
         h43.setAttribute("class","percentoff");
-        h43.textContent = elem.Percent_off;
+        h43.textContent = obj.Percent_off;
 
         var h44 = document.createElement("h4");
-        h44.textContent = elem.MRP;
+        h44.textContent = obj.MRP;
         
         div3.append(h42,h43,h44);
 
@@ -46,17 +46,17 @@ function displaynotifyproduct(){
 
         var p1 = document.createElement("p");
         p1.setAttribute("class","product_rating");
-        p1.textContent = elem.Rating;
+        p1.textContent = obj.Rating;
 
         div4.append(p1);
 
         var p2 = document.createElement("p");
-        p2.textContent = elem.Discount;
+        p2.textContent = obj.Discount;
 
         div2.append(anch1,div3,div4,p2);
         div.append(div1,div2);
         document.querySelector("#parent").append(div);
-})
+
 
 }
 document.querySelector("form").addEventListener("submit",thanksmsg);
