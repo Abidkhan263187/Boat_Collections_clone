@@ -512,7 +512,7 @@ function displayproducts(list) {
             btn = document.createElement("div");
             btn.setAttribute("class", "nmdiv");
             var nmbtn = document.createElement("a");
-            nmbtn.setAttribute("href", "notify.html");
+            nmbtn.setAttribute("href", "../notify/notify.html");
             nmbtn.setAttribute("class", "nmanchor");
             nmbtn.textContent = "NOTIFY ME";
             nmbtn.addEventListener("click", function () {
@@ -621,30 +621,31 @@ function homepagecategory(str) {
     displayproducts(filtered2);
 }
 
+//Notify Me
+var notifyproduct = JSON.parse(localStorage.getItem("notify_list")) || []; 
+function  notifyme(elem){
+    console.log("yes")
+    notifyproduct.push(elem);
+    localStorage.setItem("notify_list",JSON.stringify(notifyproduct));
+}
 // navbar functionality
 
 function goToWL() {
-    var selectedcategory = "Wireless-Earbuds";
     localStorage.setItem("selected_category", "Wireless-Earbuds");
 }
 function goToWH() {
-    var selectedcategory = "Wireless-HeadPhones";
     localStorage.setItem("selected_category", "Wireless-HeadPhones");
 }
 function goToW() {
-    var selectedcategory = "Smart Watch";
     localStorage.setItem("selected_category", "Smart Watch");
 }
 function goToBW() {
-    var selectedcategory = "NeckBands";
     localStorage.setItem("selected_category", "NeckBands");
 }
 function goToSS() {
-    var selectedcategory = "Wireless-Speakers";
     localStorage.setItem("selected_category", "Wireless-Speakers");
 }
 function goToLE() {
-    var selectedcategory = "Wireless-HeadPhones";
     localStorage.setItem("selected_category", "Wireless-HeadPhones");
 }
 
