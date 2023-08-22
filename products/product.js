@@ -409,13 +409,9 @@ var productlistval = [{
 ]
 let cartArray = JSON.parse(localStorage.getItem('cart_list')) || []
 
-// let nav = document.getElementById('navigation');
-// nav.innerHTML = navbar();
-// let footer=document.getElementById(' footer');
-// footer.innerHTML=Footer()
 
 var selectedcategory2 = localStorage.getItem("selected_category");
-// console.log(selectedcategory2);
+
 if (selectedcategory2 === "Smart Watch") {
     homepagecategory(selectedcategory2);
 }
@@ -423,7 +419,7 @@ else if (selectedcategory2 === "Wireless-Earbuds") {
     homepagecategory(selectedcategory2);
 }
 else if (selectedcategory2 === "NeckBands") {
-    // console.log(selectedcategory2)
+ 
     homepagecategory(selectedcategory2);
 }
 else if (selectedcategory2 === "Wireless-HeadPhones") {
