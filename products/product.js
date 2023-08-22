@@ -525,6 +525,7 @@ function displayproducts(list) {
 }
 
 function addtocart(obj) {
+   
     cartArray.push(obj);
     localStorage.setItem('cart_list', JSON.stringify(cartArray));
 
