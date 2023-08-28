@@ -459,7 +459,10 @@ function displayproducts(list) {
         div2.setAttribute("class", "details");
 
         var anch1 = document.createElement("a");
-        anch1.setAttribute("href", "product2.html");
+        anch1.setAttribute("href", "./description.html");
+        anch1.addEventListener('click', () => {
+            localStorage.setItem('details', JSON.stringify(elem))
+        })
         anch1.setAttribute("class", "product_name");
         anch1.textContent = elem.Name;
         anch1.addEventListener("click", function () {
