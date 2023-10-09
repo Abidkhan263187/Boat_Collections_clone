@@ -726,6 +726,7 @@ hr {
   .sidebar {
     width: 50%;
     margin-top: 10%;
+    height: 90vh;
     &.isOpen {
       transform: translateY(0);
     }
@@ -988,6 +989,8 @@ footer img {
   .sidebar {
     width: 90%;
     margin-top: 15%;
+    height: 90vh;
+    
     &.isOpen {
       transform: translateY(0);
     }

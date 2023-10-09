@@ -840,7 +840,7 @@ footer img {
   /* cart styles  */
   .sidebar {
     width: 90%;
-
+margin-top: 14%;
     &.isOpen {
       transform: translateY(0);
     }
@@ -1065,6 +1065,9 @@ footer img {
   display: flex;
   justify-content: space-around;
 
+}
+.sidebar{
+  margin-top: 7%;
 }
 
 }
