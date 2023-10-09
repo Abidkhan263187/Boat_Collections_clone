@@ -18,8 +18,9 @@ a {
 }
 
 nav {
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   z-index: 1000;
   /* Adjust the z-index value as needed */
   box-shadow: 0 1px 5px #ababab;
@@ -693,7 +694,7 @@ hr {
 
 /* Media Queries Medium Screen */
 
-@media (max-width: 1024px) {
+@media (min-width:768px) and (max-width: 1024px) {
   #parent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -706,15 +707,25 @@ hr {
   #inputMedia {
     display: none;
   }
-
   /* navigation mobole  */
   #navigation2 {
     display: block;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    width: 100%;
+    /* border: 1px solid ; */
+    z-index: 1000; 
+   
   }
-
+  #symbol{
+    width: 10%;
+    margin-left: 10px;
+    justify-content: space-around;
+  }
   .sidebar {
-    width: 60%;
-
+    width: 50%;
+    margin-top: 10%;
     &.isOpen {
       transform: translateY(0);
     }
@@ -731,7 +742,7 @@ hr {
   }
 
   #mob_inp_div {
-
+     border: 1px solid gray;
     width: 22%;
     background-color: white;
     color: black;
@@ -747,7 +758,10 @@ hr {
     width: 100%;
     align-items: center;
   }
-
+  #title {
+    margin-top: 80px;
+    padding: 0px 10px;
+  }
   .categories {
     display: none;
     z-index: 100000;
@@ -775,7 +789,7 @@ hr {
 
 }
 
-@media (max-width:768px) {
+@media (max-width:767px) {
   #navigation {
     display: none;
   }
@@ -786,12 +800,19 @@ hr {
   }
 
   #title {
+    margin-top: 80px;
     padding: 0px 10px;
   }
 
   /* mobile navigation styles  */
   #navigation2 {
     display: block;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    /* border: 1px solid ; */
+    z-index: 1000; 
+   
   }
 
   .logo {
@@ -961,12 +982,12 @@ footer img {
 
 /* media queries  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   /* cart styles  */
   .sidebar {
     width: 90%;
-
+    margin-top: 15%;
     &.isOpen {
       transform: translateY(0);
     }
