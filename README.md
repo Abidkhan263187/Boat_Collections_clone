@@ -1,4 +1,4 @@
-BoatLifestyle Clone
+## BoatLifestyle Clone
 ## [Live link](https://boat-collections-clone.vercel.app|)
 🛶🎧
 
