@@ -1,5 +1,5 @@
 ## BoatLifestyle Clone
-## [Live link](https://boat-collections-clone.vercel.app|)
+## [Live link](https://boat-collections-clone-4ecwuuy2k-abidkhan263187.vercel.app/)
 🛶🎧
 
 This project is a clone of the BoatLifestyle website, crafted using HTML, CSS, and JavaScript. It's designed to provide a user-friendly experience, and it even employs local storage for added convenience. Let's dive in and explore! 🚤🎉
